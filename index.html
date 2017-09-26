@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nintendo Quiz</title>
+  <meta name="description" content="Blank">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="gameboy.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+<main role="main">
+<div id="container">
+	<header>
+		<h1 class="mainHeader">Nintendo Quiz</h1>
+	</header>
+		<div id="gameboy">
+  			<div id="screen">
+  		
+      <div id="fullFeedBack" class="hidden">
+       <!--  <p id="fullFeedBackQuestions"></p>
+          <ol type="A" class="feedBackList">
+            <li class="feedBackAnswer1"></li>
+            <li class="feedBackAnswer2"></li>
+            <li class="feedBackAnswer3"></li>
+            <li class="feedBackAnswer4"></li>
+          </ol>
+        <p class="feedBackCorrect">Correct Answer: </p>
+        <p class="feedBackYours">You Chose: </p> -->
+      </div>
+
+
+
+  	<form id="nintendoQuiz">
+  		<div id="levelScore">
+  			<p class="score" id="score">Score</p>
+  			<p class="level" id="level">Level 1 of 10</p>
+  		</div>
+  		<div id="feedBack" class="hidden">
+  			<h5 id="feedBackText"></h5>
+  			<img id="feedBackImage1" src="bowser.gif" class="hidden" alt="bowser crying gif"></img>
+  			<img id="feedBackImage2" src="mario.gif" class="hidden" alt="mario thumbs up gif"></img>
+  			<h3 id="finalScore" class="hidden"></h3>
+            <button id="resultsButton" form="nintendoQuiz" class="hidden">CLICK FOR QUIZ REVIEW</button>
+  		</div>
+  			<div id="chooseAnswer">
+  			<p class="formQuestion" id="formQuestion"></p>
+        <fieldset>
+        <legend>Answers:</legend>
+  			<label> 
+    			<input type="radio" id="formAnswerA" value="1" 
+     			name="formAnswer"><text class="radioTextA"></text>
+     		</label> 
+
+    		<label>
+    			<input type="radio" id="formAnswerB" value="2" 
+     			name="formAnswer"><text class="radioTextB"></text>
+    		</label>
+
+    		<label>
+   		 		<input type="radio" id="formAnswerC" value="3" 
+     			name="formAnswer"><text class="radioTextC"></text>
+   			</label>
+
+   			<label>
+   		   	 <input type="radio" id="formAnswerD" value="4" 
+     			name="formAnswer"><text class="radioTextD"></text>
+   			</label>
+        </fieldset>
+  			</div>
+  	</form>
+
+
+
+
+  </div>
+</div>
+	<div id="buttons">
+		 <button id="startQuiz" >Start Quiz</button>
+		 <button id="retryQuiz" >Reset Quiz</button>
+		 <button id="next" form="nintendoQuiz" >Next Question</button>
+		 <button type="submit" name="submit" id="submitButton" form="nintendoQuiz" >Submit Answer</button>
+	</div>
+</div>
+
+
+<!-- <footer>
+<hr>
+	<a href="http://cssdeck.com/labs/nintendo-gameboy"> Gameboy HTML/CSS Source</a>
+</footer> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="jquery.js"></script> -->
+<script type="text/javascript" src="script.js"></script>
+</main>
+</body>
+</html>
+
+
+
+<!--put the buttons div inside of the gameboy div -->
